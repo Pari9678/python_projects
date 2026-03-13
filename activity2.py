@@ -1,9 +1,16 @@
-x = 10
-y = -10
-print("x >> 1=", x >> 1)
-print("y >> 1=", y >> 1)
+units = int(input("Enter mumber of units you have consumed:"))
+if (units < 50):
+    amount = units * 2.60
+    subcharge = 25
+elif (units <= 100):
+    amount = 130 + ((units - 50)*3.25)
+    subcharge = 35
+elif (units <= 200):
+    amount = 130 + 162.50 + ((units - 100)*5.26)
+    subcharge = 45
+else:
+    amount = 130 + 162.50 + 526 ((units - 200)*8.45)
+    subcharge = 75
 
-x = 8
-y = -3
-print("x << 1=", x << 1)
-print("y << 1=", y << 1)
+total = amount + subcharge
+print ("Electricity bill = %.2f" %total)

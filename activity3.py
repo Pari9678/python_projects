@@ -1,12 +1,29 @@
-mean1=39
-wrong_number=31
-correct_number=28
-total_number=13
-sum = mean1*total_number
-print("the sum of 13 is:", sum)
+print ("Select your transport:")
+print ("1. bike")
+print ("2. car")
 
-num2=sum-((wrong_number)-(correct_number))
-print("sum-((wrong_number)-(correct_number): ",num2)
+choice = int(input("Enter your choice:"))
+if (choice==1):
+    print ("What type of bike?")
+    print ("1. Scooty")
+    print ("2. Scooter")
 
-mean2=num2/total_number
-print(mean2)
+    choice2 = int(input("Enter your choice2:"))
+    if choice2==1:
+        print ("You have chosen Scooty")
+    else:
+        print ("You have chosen Scooter")
+
+elif (choice==2):
+    print ("What type of car?")
+    print ("1. Sedan")
+    print ("2. XUV")
+    
+    choice3 = int(input("Enter your choice3:"))
+    if choice3==1:
+         print ("You have chosen Sedan")
+    else:
+        print ("You have chosen XUV")
+
+else:
+    print ("Wrong choice")

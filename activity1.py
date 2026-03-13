@@ -1,20 +1,10 @@
-x = 8
-if (type(x) is int):
-    print("true")
+medical_cause= (input("Do you have a medical cause (yes/no):"))
+
+if medical_cause == "yes" :
+    print ("You're allowed")
 else:
-    print("false")
-
-y = 8.2
-if (type(y) is not float):
-    print("true")
-else:
-    print("false")
-
-a = 28
-b = 28
-if (a is b):
-    print("x and y is same identity")
-
-b = 10
-if (a is not b):
-    print("x and y don't have same idenity")
+    attendance= int(input("Enter attendance of student:"))
+    if attendance >= 75 :
+        print ("Allowed")
+    else: 
+        print ("You are not allowed")

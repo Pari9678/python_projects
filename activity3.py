@@ -1,11 +1,20 @@
-num = int(input("Enter a number: "))
-sum = 0
-temp = num
-while temp > 0:
-    digit = temp % 10
-    sum += digit ** 3
-    temp //= 10
-if num == sum:
-    print (num, "is an armstrong number")
+num = int(input("enter number: "))
+t = num
+numLen = 0
+while t>0:
+    numLen = numLen + 1
+if numLen>=4:
+    numLen = int(numLen/2)
+    chk = 0
+    while num>0:
+        rem = num%10
+        if chk==numLen:
+            midOne = rem
+        elif (chk==numLen-1):
+            midTwo = rem
+        num = int(num/10)
+        chk = chk+1
+    prod = midOne*midTwo
+    print("\nProduct of mid digits (", +str(midOne)+ "*" +str(midTwo)+ ") = ", prod)
 else:
-    print (num, "is not an armstrong number")
+    print ("\nIts not a 4 or more than 4-digit number!")

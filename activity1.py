@@ -1,10 +1,6 @@
-string = input("Enter your word: ")
-char = input("enter your character: ")
-i = 0
-count = 0
-while (i < len(string)):
-    if (string[i] == char):
-        count = count + 1
-    i = i + 1
-
-print("The total number of times", char, "has occured", count)
+print ("Half pyramid pattern of stars (*): ")
+n = int(input("Enter number of rows: "))
+for i in range(n):
+    for j in range(1+n):
+        print ("* ", end="")
+    print ()

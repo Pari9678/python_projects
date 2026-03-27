@@ -1,10 +1,9 @@
-lower = int(input("enter a lower range: "))
-upper = int(input("enter a upper range: "))
-print ("Prime numbers between", lower, "and", upper, "are:")
-for num in range(lower, upper + 1):
-    if num > 1:
-        for i in range(2, num):
-            if ( num % 1) == 0:
-                break
-            else:
-                print (num)
+rows = int(input("Enter the total amount of rows: "))
+number = 1
+
+print ("Floyd's triangle")
+for i in range(1, rows + 1):
+    for j in range(1, i + 1):
+        print (number, end = ' ')
+        number = number + 1
+    print ()
